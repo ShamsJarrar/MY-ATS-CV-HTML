@@ -30,12 +30,14 @@
                 border-bottom: 2px solid #1f1f1f;
             }
             
-            p.section-body {
+            /* Summary */
+            p.summary-body {
                 font-size: 13px;
                 color: #4b4b4b;
                 font-weight: 500;
             }
 
+            /*Skills*/
             p.list-title {
                 font-size: 14px;
                 color: #4b4b4b;
@@ -44,7 +46,7 @@
             }
 
             ul.skills {
-                list-style-type: none;
+                list-style-type: disc;
                 padding-left: 15px;
                 margin-top: 0;
                 margin-bottom: 10px;
@@ -56,6 +58,7 @@
                 font-weight: 500;
             }
 
+            /* Experience */
             div.experience {
                 margin-bottom: 25px;
             }
@@ -81,6 +84,7 @@
                 margin-top: 0;
             }
 
+            /* Education */
             div.education {
                 margin-bottom: 25px;
             }
@@ -106,6 +110,7 @@
                 margin-top: 0;
             }
 
+            /* Projects */
             div.project {
                 margin-bottom: 25px;
             }
@@ -131,6 +136,98 @@
                 margin-top: 0;
             }
 
+            /* Coursework */
+            div.coursework {
+                margin-bottom: 25px;
+            }
+
+            p.coursework-title {
+                font-size: 16px;
+                color: #4b4b4b;
+                font-weight: 600;
+                margin-bottom: 3px;
+            }
+
+            p.coursework-subtitle {
+                font-size: 13px;
+                color: #4b4b4b;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 3px;
+            }
+
+            ul.coursework-desc {
+                list-style-type: disc;
+                padding-left: 20px;
+                margin-top: 0;
+            }
+
+            /*Volunteer*/
+            div.volunteer {
+                margin-bottom: 25px;
+            }
+
+            p.volunteer-title {
+                font-size: 16px;
+                color: #4b4b4b;
+                font-weight: 600;
+                margin-bottom: 3px;
+            }
+
+            p.volunteer-subtitle {
+                font-size: 13px;
+                color: #4b4b4b;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 3px;
+            }
+
+            ul.volunteer-desc {
+                list-style-type: disc;
+                padding-left: 20px;
+                margin-top: 0;
+            }
+
+            /*Languages*/
+            p.language {
+                font-size: 15px;
+                color: #4b4b4b;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            /*PDF Download Button*/
+            button {
+                background-color: #696969;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 16px;
+            }
+
+            button:hover {
+                background-color: #999999;
+            }
+
+            @media print {
+                button {
+                    display: none;
+                }
+                
+                body {
+                    margin: 0;
+                    padding: 20px;
+                    background: white;
+                    color: black;
+                }
+            }
+
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+
         </style>
     </head>
 
@@ -146,13 +243,14 @@
                 <a href="https://github.com/shamsjarrar">github.com/ShamsJarrar</a>
              </p>
         </header>
+
         <hr>
 
         <main>
 
             <section aria-labelledby="summary">
                 <h3 class="section-title">SUMMARY</h3>
-                <p class="section-body">
+                <p class="summary-body">
                     Motivated Computer Engineering student with a strong passion for Software Engineering and Artificial Intelligence. Experienced in applying core
                     software engineering, computer engineering, and AI concepts through hands-on projects and internships. Skilled in problem-solving, teamwork,
                     and leadership, with a consistent record of academic excellence and active involvement in extracurricular initiatives. Seeking opportunities to
@@ -306,9 +404,66 @@
                 </div>
             </section>
 
-            
+            <section aria-labelledby="Coursework">
+                <h3 class="section-title">COURSEWORK</h3>
 
+                <div aria-labelledby="Machine Learning Specialization" class="coursework">
+                    <p class="coursework-title">Machine Learning Specialization</p>
+                    <p class="coursework-subtitle">DeepLearning.AI and Stanford University • 2025</p>
+                    <ul class="coursework-desc">
+                        <li>Supervised Machine Learning: Regression and Classification.</li>
+                        <li>Advanced Learning Algorithms.</li>
+                        <li>Unsupervised Learning, Recommenders, Reinforcement Learning.</li>
+                        <li><a href="https://coursera.org/share/f9089699685578a5eaf85d1ded2d1d23">Certificate Link</a></li>
+                    </ul>
+                </div>
+
+                <div aria-labelledby="Data Science Training" class="coursework">
+                    <p class="coursework-title">Data Science Training</p>
+                    <p class="coursework-subtitle">SHAI for AI • 2024</p>
+                    <ul class="coursework-desc">
+                        <li>Implemented machine learning models for data analysis and deep learning applications.</li>
+                        <li>Utilized Python, leveraging NumPy, Pandas, and Scikit-learn for multiple real-world projects.</li>
+                        <li>Conducted exploratory data analysis (EDA) and feature engineering to improve model performance.</li>
+                        <li><a href="https://drive.google.com/file/d/1UxlGLKKX-EAxB8bT6cUQs9x_mluF6j4K/view?usp=sharing">Certificate Link</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section aria-labelledby="Volunteer Experience">
+                <h3 class="section-title">VOLUNTEER EXPERIENCE</h3>
+
+                <div aria-labelledby="JPC Primary Leader" class="volunteer">
+                    <p class="volunteer-title">Primary Leader</p>
+                    <p class="volunteer-subtitle">Jordan University of Science and Technology • JUST Programming Chapter - JPC • August 2023 - February 2025</p>
+                    <ul class="volunteer-desc">
+                        <li>Managed chapter operations, organized contests, training sessions, and strategic initiatives to boost engagement.</li>
+                    </ul>
+                </div>
+
+                <div aria-labelledby="HR Team Member" class="volunteer">
+                    <p class="volunteer-title">HR Team Member</p>
+                    <p class="volunteer-subtitle">Jordan University of Science and Technology • IEEE JUST Student Branch • April 2024 - September 2024</p>
+                    <ul class="volunteer-desc">
+                        <li>Managed student registrations for various IEEE societies by documenting steering team information and creating tracking forms to organize
+                        contact details efficiently.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section aria-labelledby="Languages">
+                <h3 class="section-title">LANGUAGES</h3>
+                
+                <p class="language">English - C1/IELTS 8.0</p>
+                <p class="language">Arabic - Native</p>
+            </section>
         </main>
+
+        <footer style="text-align: center;">
+            <button onclick="window.print()">
+                Download PDF
+            </button>
+        </footer>
 
     </body>
 
