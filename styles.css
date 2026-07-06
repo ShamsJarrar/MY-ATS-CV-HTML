@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+    --font-arial: Arial, Helvetica, sans-serif;
+}
+
+header {
+    @apply text-center text-[#1f1f1f];
+}
+
+header .header-title {
+    @apply mt-[15px] mb-[6px] font-bold text-2xl;
+}
+
+header p {
+    @apply text-[13px] m-[10px] font-semibold;
+}
+
+header p.info {
+    @apply text-[10px];
+}
+
+header p.info a {
+    @apply text-[#1f1f1f] underline;
+}
+
+body {
+    @apply font-arial m-4;
+}
+
+section {
+    @apply mt-[30px];
+}
+
+section a {
+    @apply underline text-blue-500;
+}
+
+.section-title {
+    @apply text-[17px] font-semibold pb-[4px] border-b-[2px] border-b-[#1f1f1f] text-[#1f1f1f];
+}
+
+/* summary */
+.summary-body {
+    @apply text-[13px] font-medium text-[#4b4b4b];
+}
+
+/* Skills */
+.list-title {
+    @apply text-[14px] font-semibold text-[#1f1f1f] mb-[10px];
+}
+
+.skills {
+    @apply list-disc pl-[15px] mt-0 mb-[10px];
+}
+
+
+/* Shared styles */
+li {
+    @apply text-[13px] font-medium text-[#4b4b4b];
+}
+
+.experience,
+.education,
+.project,
+.coursework,
+.volunteer {
+    @apply mb-[25px];
+}
+
+.experience-title,
+.education-title,
+.project-title,
+.coursework-title,
+.volunteer-title {
+    @apply text-[16px] font-semibold text-[#4b4b4b] mb-[3px];
+}
+
+.experience-subtitle,
+.education-subtitle,
+.project-subtitle,
+.coursework-subtitle,
+.volunteer-subtitle {
+    @apply text-[13px] font-semibold text-[#4b4b4b] mt-0 mb-[3px];
+}
+
+.experience-desc,
+.education-desc,
+.project-desc,
+.coursework-desc,
+.volunteer-desc {
+    @apply list-disc pl-[20px] mt-0;
+}
+
+/* language */
+.language {
+    @apply text-[15px] font-semibold text-[#4b4b4b] mb-[15px];
+}
+
+/* footer */
+footer {
+     @apply text-center;
+}
+
+button {
+    @apply bg-[#696969] text-white border-0 rounded px-[5px] py-[5px] text-[16px];
+}
+
+button:hover {
+    @apply bg-[#999999];
+}
+
+@media print {
+    button {
+        @apply hidden;
+    }
+    
+    body {
+        @apply m-0 p-[20px] bg-white text-black;
+
+    }
+}
+
+@page {
+    size: A4;
+    margin: 20mm;
+}
